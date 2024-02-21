@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div class="Qoute-box">
+      <h2>Quote of the day</h2>
+      <blockquote id="quote">stay loyal, but notstupid</blockquote>
+      <!-- <span id="writer">kiran</span> -->
+      <div>
+        <button id="button">New Quote</button>
+        <button id="twitter" onclick="tweet()">
+          <img src="./twitter.png" alt="" />Tweet
+        </button>
+        <button id="whatsapp" onclick="whatsapp()">whatsapp</button>
+        <img src="./whatsapp.png" alt="" class="what">
+      </div>
+    </div>
+
+    <script>
+      const quotes = [
+        "Dreams don’t work unless you do. –kiran ",
+        "Nothing will work unless you do.” –praveen",
+        "Believe you can and you’re halfway there.–yash",
+        "The mind is everything. What you think you become. –navya",
+        " Life is either a daring adventure or nothing at all. –naveen",
+        "Kites rise highest against the wind – not with it.” – Winston Churchil",
+        " The best revenge is massive success.” –priya",
+        "I have not failed. I’ve just found 10,000 ways that won’t work. –kiran",
+        " Life is really simple, but we insist on making it complicated.– Confucius",
+        "There is only one way to avoid criticism: do nothing, say nothing, and be nothing. – Aristotle ",
+        "Change your thoughts and you change your world.” –vishnu ",
+        "When I let go of what I am, I become what I might be. –arun ",
+        "Be brave. Take risks. Nothing can substitute experience. –anil",
+        " Doubt kills more dreams than failure ever will. –kiran",
+        "Happiness is not something readymade. It comes from your own actions. – navya",
+      ];
+      const Btn = document.getElementById("button");
+      const quote = document.getElementById("quote");
+      button.addEventListener("click", generateRandomQuote);
+      twitter.addEventListener("onclick", generateRandomQuote());
+      function generateRandomQuote() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        quote.textContent = quotes[randomIndex];
+      }
+
+      function tweet() {
+        const quoteText = document.getElementById("quote").textContent;
+        window.open(
+          "https://twitter.com/intent/tweet?text=" +
+            encodeURIComponent(quoteText),
+          "tweet window",
+          "width=700px, height=300px"
+        );
+      }
+     whatsapp.addEventListener("onclick",whatsapp())
+     function whatsapp() {
+        const quoteText = document.getElementById("quote").textContent;
+        window.open(
+          "https://api.whatsapp.com/send?phone=whatsappphonenumber&text=" +
+            encodeURIComponent(quoteText),
+          "tweet window",
+          "width=700px, height=300px"
+        );
+      }
+
+
+    </script>
+  </body>
+</html>

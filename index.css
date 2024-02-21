@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(197, 157, 219);
+}
+.Qoute-box {
+  width: 700px;
+  /* height: 300px; */
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 200px;
+  background-color: aliceblue;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 1px 10px 10px 1px black;
+  padding: 40px;
+  border-radius: 10px;
+}
+.Qoute-box h2 {
+  font-weight: 30px;
+  margin-bottom: 40px;
+}
+.Qoute-box blockquote {
+  font-size: 20px;
+  min-height: 130px;
+}
+.Qoute-box blockquote::before,
+.Qoute-box blockquote::after {
+  content: '"';
+}
+.Qoute-box div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -30px;
+}
+.Qoute-box button {
+  background-color: rgb(140, 177, 248);
+  color: black;
+  border: 1px solid red;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  display: flex;
+  margin: 2px;
+  align-items: center;
+  justify-content: center;
+}
+.Qoute-box button:active {
+  color: red;
+  background-color: cyan;
+}
+.Qoute-box button img {
+  width: 50px;
+  margin-right: 10px;
+}
+.Qoute-box button:nth-child(2) {
+  background: transparent;
+  background-color: white;
+}
+.what{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 210px;
+}
+.Qoute-box button:nth-child(3) {
+  background: transparent;
+  background-color: white;
+}
