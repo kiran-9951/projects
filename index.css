@@ -69,3 +69,50 @@ body {
   background: transparent;
   background-color: white;
 }
+@media only screen and (max-width: 600px) {
+  .Qoute-box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 20px;
+  }
+  .Qoute-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .Qoute-box blockquote {
+    font-size: 16px;
+    min-height: 100px;
+  }
+  .Qoute-box button {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .what {
+    width: 30px;
+    height: 30px;
+    margin-left: 160px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .Qoute-box {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .Qoute-box {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    padding: 40px;
+  }
+}
+
