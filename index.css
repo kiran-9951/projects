@@ -2,7 +2,7 @@ body {
   background-color: rgb(197, 157, 219);
 }
 .Qoute-box {
-  width: 700px;
+  width: 600px;
   /* height: 300px; */
   position: absolute;
   margin-left: 300px;
@@ -11,7 +11,7 @@ body {
   text-align: center;
   box-sizing: border-box;
   box-shadow: 1px 10px 10px 1px black;
-  padding: 40px;
+  padding: 30px;
   border-radius: 10px;
 }
 .Qoute-box h2 {
@@ -29,10 +29,10 @@ body {
 .Qoute-box div {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   position: absolute;
   margin-top: -50px;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .Qoute-box button {
   background-color: rgb(140, 177, 248);
